@@ -1,0 +1,27 @@
+[project]
+name = "read-my-paper"
+version = "0.1.0"
+description = "Read research papers aloud with local OCR and streamed voice cloning"
+readme = "README.md"
+authors = [
+    { name = "wynnson", email = "wynnsondaone@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "docling",
+    "numpy",
+    "pocket-tts",
+    "questionary",
+    "rich",
+    "sounddevice",
+    "soundfile",
+    "typer",
+]
+
+[project.scripts]
+read-my-paper = "read_my_paper:main"
+rmp = "read_my_paper:main"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
