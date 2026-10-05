@@ -1,6 +1,32 @@
-# RMP
+# Read My Paper
 
-Read research papers aloud, locally, in your own voice.
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/8dcb98d9-b9f6-4778-bc8b-0f85e5602059"
+    alt="Read My Paper menu"
+    width="750"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/bb2fcf07-7ec1-4443-b5c9-65af98864543"
+    alt="Read My Paper voice selection"
+    width="750"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/10bf03d3-2129-4164-a4ae-a3189f5b791e"
+    alt="Read My Paper playback interface"
+    width="750"
+  />
+</p>
+
+
+Read research papers aloud, locally, with custom voice.
+
 
 ## Quick Start
 
@@ -19,11 +45,11 @@ uv run rmp voice add audio/voice.wav
 uv run rmp play paper --voice voice
 ```
 
-`paper` comes from `paper.pdf`. `voice` comes from `voice.wav`.
+## Voice cloning
+Add a `.wav` clip into /audio. Then you can use the cli to convert it into safetensors.
 
-The CLI shows what it is doing with labels such as `[paper]`, `[voice]`, and `[play]`.
-
-Formula blocks are converted from LaTeX to spoken English when possible. Unstructured equation OCR is skipped instead of read as symbols.
+## Adding a paper
+Add a pdf under `\papers`. Then use the cli to convert it into something readable. This might take a while and it is not perfect.
 
 ## Clip a Voice Sample
 
@@ -44,3 +70,6 @@ uv run rmp --help
 uv run rmp paper list
 uv run rmp voice list
 ```
+
+## License
+Licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
