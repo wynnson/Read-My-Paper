@@ -49,7 +49,7 @@ uv run rmp play paper --voice voice
 Add a `.wav` clip into /audio. Then you can use the cli to convert it into safetensors.
 
 ## Adding a paper
-Add a pdf under `\papers`. Then use the cli to convert it into something readable. This might take a while and it is not perfect.
+Add a pdf under `\papers` (create a folder in the root). Then use the cli to convert it into something readable. This might take a while and it is not perfect.
 
 ## Clip a Voice Sample
 
